@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    background-color: lightgreen;
+    margin: 20px 0;
+}
+
+p {
+    color: brown;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+span {
+    color: green;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 5px 0;
+}
+
+div+p {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 20px;
+    background-color: lightyellow;
+}
