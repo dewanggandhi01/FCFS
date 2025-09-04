@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(159, 191, 237);
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.boxA, .boxB, .boxC, .boxD, .boxE, .boxF, .boxG, .boxH, .boxI, .boxJ, .boxK, .boxL {
+    margin: 1px;
+    width: 100px;
+    height: 40px;
+    background-color: lightblue;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    background-color: lightgreen;
+    margin: 20px 0;
+}
+
+p {
+    color: brown;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+p:nth-child(3){
+    background-color: blue;
+    color: yellow;
+
+} 
+
+div p:nth-of-type{
+    background-color: black;
+    color: blue;
+}
+
+span{
+    align-items: center;
+    /* display: flex; */
+
+    background-color: limegreen;
+    color: black;
+}
+
+.container{
+    display: grid;
+    width: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: lightblue;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.box1, .box2, .box3, .box4 {
+    margin: 3px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(244, 79, 14);
+    text-align: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 img, .box2 img, .box3 img, .box4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.container1 {
+    display: grid;
+    background-color: lightcoral;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 5px solid black;
+}
+
+.boxs1, .boxs2, .boxs3, .boxs4 {
+
+    margin: 3px;
+    padding: 20px;
+    background-color: rgb(14, 187, 244);
+    text-align: center;
+    border: 2px solid black;
+}
+
+.boxs5{
+    background-color: blue;
+    border: 5px solid blue;
+    text-align: center;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);}
+
+.boxes1, .boxes2, .boxes3, .boxes4 {
+    margin: 3px;
+    padding: 20px;
+    background-color: rgb(249, 45, 62);
+    text-align: center;
+    border: 2px solid black;
+}
+

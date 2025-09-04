@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    background-color: lightgreen;
+    margin: 20px 0;
+}
+
+p {
+    color: brown;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+span {
+    color: green;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 5px 0;
+}
+
+div+p {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 20px;
+    background-color: lightyellow;
+}
+
+.container {
+    display: flex;
+    border-color: black;
+    border: 2px solid black;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.box1 {
+    background-color: aqua;
+    width: 60px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 30px 30px 10px 10px;
+    position: relative;
+}
+
+.box1::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.box1::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    width: 50px;
+    height: 15px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.box2 {
+    background-color: lightcoral;
+    width: 60px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 30px 30px 10px 10px;
+    position: relative;
+}
+
+.box2::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.box2::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    width: 50px;
+    height: 15px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.box3 {
+    background-color: lightgreen;
+    width: 60px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 30px 30px 10px 10px;
+    position: relative;
+}
+
+.box3::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.box3::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    width: 50px;
+    height: 15px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.box4 {
+    background-color: lightblue;
+    width: 60px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 30px 30px 10px 10px;
+    position: relative;
+}
+
+.box4::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.box4::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    width: 50px;
+    height: 15px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.box5 {
+    background-color: rgb(10, 186, 244);
+    width: 60px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 30px 30px 10px 10px;
+    position: relative;
+}
+
+.box5::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(10, 186, 244);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.box5::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    width: 50px;
+    height: 15px;
+    background-color: rgb(10, 186, 244);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.box6 {
+    background-color: rgb(239, 13, 171);
+    width: 60px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 30px 30px 10px 10px;
+    position: relative;
+    animation: moveUpAndBack 4s ease-in-out infinite;
+    margin: 0 auto;
+}
+
+.box6::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(239, 13, 171);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.box6::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    width: 50px;
+    height: 15px;
+    background-color: rgb(239, 13, 171);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+@keyframes moveUpAndBack {
+    0% {
+        transform: translateX(-200px) translateY(-140px);
+    }
+    25% {
+        transform: translateX(-140px) translateY(-140px);
+    }
+    50% {
+        transform: translateX(-80px) translateY(-140px);
+    }
+    75% {
+        transform: translateX(-20px) translateY(-140px);
+    }
+    85% {
+        transform: translateX(40px) translateY(-140px);
+    }
+    100% {
+        transform: translateX(-200px) translateY(-140px);
+    }
+}
